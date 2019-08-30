@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './jsPDF/app.component';
 import { PdfMakerComponent } from './pdf-maker/pdf-maker.component';
 
+import { PdfmakeService } from 'ng-pdf-make';
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +15,9 @@ import { PdfMakerComponent } from './pdf-maker/pdf-maker.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    PdfmakeService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

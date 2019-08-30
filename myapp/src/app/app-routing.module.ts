@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { PdfMakerComponent } from './pdf-maker/pdf-maker.component';
 
-
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'pdfMaker', component: PdfMakerComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

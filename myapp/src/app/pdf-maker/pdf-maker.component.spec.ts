@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import Symbol_observable from 'symbol-observable';
 import { PdfMakerComponent } from './pdf-maker.component';
 
 describe('PdfMakerComponent', () => {
